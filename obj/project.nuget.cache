@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "s/25Yr9YcqlPsJR2Gg/i1zCYV+4igKDCSGY6q9mvaBQLjfMtcPRrCHCGWhuwpiOsQwZ8kuuXZtBXUA9p/UgG0A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vktirum7\\source\\repos\\docker1\\docker1\\docker1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vktirum7\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.8\\microsoft.visualstudio.azure.containers.tools.targets.1.10.8.nupkg.sha512",
+    "C:\\Users\\vktirum7\\.nuget\\packages\\microsoft.visualstudio.azure.kubernetes.tools.targets\\1.1.0\\microsoft.visualstudio.azure.kubernetes.tools.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\vktirum7\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\vktirum7\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

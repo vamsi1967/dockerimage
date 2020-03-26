@@ -1,0 +1,18 @@
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1
+ARG BUILD_CONFIGURATION=Debug
+ENV ASPNETCORE_ENVIRONMENT=Development
+ENV ASPNETCORE_URLS=http://+:80
+ENV DOTNET_USE_POLLING_FILE_WATCHER=true
+EXPOSE 80
+
+WORKDIR /src
+COPY ["docker1/docker1.csproj", "docker1/"]
+
+RUN dotnet restore "docker1/docker1.csproj"
+COPY . .
+WORKDIR "/src/docker1"
+RUN dotnet build --no-restore "docker1.csproj" -c $BUILD_CONFIGURATION
+
+RUN echo "exec dotnet run --no-build --no-launch-profile -c $BUILD_CONFIGURATION --" > /entrypoint.sh
+
+ENTRYPOINT ["/bin/bash", "/entrypoint.sh"]
